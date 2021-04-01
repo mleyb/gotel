@@ -38,7 +38,7 @@ func main() {
 			simple.NewWithExactDistribution(),
 			exporter,
 		),
-		controller.WithExporter(exporter),
+		controller.WithPusher(exporter),
 		controller.WithCollectPeriod(5*time.Second),
 	)
 
